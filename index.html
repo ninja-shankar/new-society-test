@@ -54,6 +54,48 @@
             color: #888;
             font-size: 0.9em;
         }
+        .input-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #4a6baf;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #4a6baf;
+            box-shadow: 0 0 5px rgba(74, 107, 175, 0.3);
+        }
+        .btn {
+            background-color: #4a6baf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #332b8c;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +108,20 @@
             <p>We are a forward-thinking organization dedicated to creating a better future for everyone.</p>
             <p>Our mission is to connect people and ideas to foster innovation and positive change.</p>
         </div>
+        
+        <div class="content input-section">
+            <h2>Join Our Community</h2>
+            <p>Enter your email to receive updates and news from New Society.</p>
+            
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+        
         <div class="footer">
             &copy; 2025 New Society. All rights reserved.
         </div>
